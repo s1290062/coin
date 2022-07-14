@@ -1,7 +1,16 @@
 import java.util.*;
+
 class coin{
     public static void main(String[] args){
+
 	int i,a,c=0;
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("Who are you?");
+	System.out.print(">");
+	String name = sc.next();
+	System.out.println("Hello, "+name+"!");
+	
 
 	Random random =new Random();
 	System.out.println("Tossing a coin...");
@@ -16,8 +25,11 @@ class coin{
 	    }
 	}
 	    System.out.println("Heads :1, Tails: 2");
-	    if(c>=2) System.out.println("you won!");
-	    else System.out.println("you lost!");
+	    if(c>=2) System.out.println(name+" won!");
+	    else System.out.println(name+" lost!");
+
+
+
 	
     }
 }
